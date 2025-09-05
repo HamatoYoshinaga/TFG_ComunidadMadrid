@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+
+<!-- Catálogo Principal -->
+<dcat:Catalog rdf:about="http://tfg-accesibilidad.es/catalog/accesibilidad/">
+    <dct:title xml:lang="es">Accesibilidad a Servicios Públicos - Comunidad de Madrid</dct:title>
+    <dct:description xml:lang="es">
+        Catálogo de datos sobre accesibilidad y distancias de núcleos urbanos a servicios públicos de salud, educación superior y otros servicios en municipios con menos de 50,000 habitantes de la Comunidad de Madrid. Los datos incluyen distancias y tiempos de desplazamiento calculados mediante Google Distance Matrix API para diferentes modos de transporte.
+    </dct:description>
+    <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-30</dct:modified>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:landingPage rdf:resource="http://tfg-accesibilidad.es/catalog/accesibilidad/"/>
+    <dct:spatial rdf:resource="http://publications.europa.eu/resource/authority/nuts/ES300"/>
+    <dcat:keyword xml:lang="es">accesibilidad</dcat:keyword>
+    <dcat:keyword xml:lang="es">transporte</dcat:keyword>
+    <dcat:keyword xml:lang="es">servicios públicos</dcat:keyword>
+    <dcat:keyword xml:lang="es">salud</dcat:keyword>
+    <dcat:keyword xml:lang="es">educación superior</dcat:keyword>
+    <dcat:keyword xml:lang="es">núcleos urbanos</dcat:keyword>
+    <dcat:keyword xml:lang="es">distancias</dcat:keyword>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:publisher>
+        <foaf:Organization rdf:about="http://tfg-accesibilidad.es/organization/">
+            <foaf:name>Proyecto TFG - Accesibilidad Servicios Públicos</foaf:name>
+            <foaf:homepage rdf:resource="http://tfg-accesibilidad.es/"/>
+        </foaf:Organization>
+    </dct:publisher>
+    <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+
+    <!-- Series de Datasets -->
+    <dcat:dataset>
+        <dcat:DatasetSeries rdf:about="http://tfg-accesibilidad.es/series/accesibilidad/hospitales">
+            <dct:title xml:lang="es">Serie de Accesibilidad - Hospitales</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento desde núcleos urbanos hasta hospitales públicos de la Comunidad de Madrid</dct:description>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dct:publisher rdf:resource="http://tfg-accesibilidad.es/organization/"/>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
+        </dcat:DatasetSeries>
+    </dcat:dataset>
+
+    <dcat:dataset>
+        <dcat:DatasetSeries rdf:about="http://tfg-accesibilidad.es/series/accesibilidad/centros_salud">
+            <dct:title xml:lang="es">Serie de Accesibilidad - Centros de Salud</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento desde núcleos urbanos hasta centros de salud de atención primaria de la Comunidad de Madrid</dct:description>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dct:publisher rdf:resource="http://tfg-accesibilidad.es/organization/"/>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
+        </dcat:DatasetSeries>
+    </dcat:dataset>
+
+    <dcat:dataset>
+        <dcat:DatasetSeries rdf:about="http://tfg-accesibilidad.es/series/accesibilidad/consultorios">
+            <dct:title xml:lang="es">Serie de Accesibilidad - Consultorios de Salud</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento desde núcleos urbanos hasta consultorios locales de salud de la Comunidad de Madrid</dct:description>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dct:publisher rdf:resource="http://tfg-accesibilidad.es/organization/"/>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
+        </dcat:DatasetSeries>
+    </dcat:dataset>
+
+    <dcat:dataset>
+        <dcat:DatasetSeries rdf:about="http://tfg-accesibilidad.es/series/accesibilidad/campus_universitarios">
+            <dct:title xml:lang="es">Serie de Accesibilidad - Campus Universitarios</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento desde núcleos urbanos hasta campus de universidades públicas de la Comunidad de Madrid (UAH, UAM, UC3M, UCM, UPM, URJC)</dct:description>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dct:publisher rdf:resource="http://tfg-accesibilidad.es/organization/"/>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+            <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
+        </dcat:DatasetSeries>
+    </dcat:dataset>
+
+    <!-- Datasets Individuales por Modo de Transporte -->
+    
+    <!-- Hospitales - Driving -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/hospitales/driving/2025">
+            <dct:title xml:lang="es">Accesibilidad a Hospitales - Vehículo Privado (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en vehículo privado desde núcleos urbanos hasta hospitales públicos de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>hospitales-driving-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100215"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/hospitales/driving/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/hospitales_driving_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/hospitales"/>
+            <dcat:keyword xml:lang="es">hospitales</dcat:keyword>
+            <dcat:keyword xml:lang="es">vehículo privado</dcat:keyword>
+            <dcat:keyword xml:lang="es">accesibilidad</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+    <!-- Hospitales - Transit -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/hospitales/transit/2025">
+            <dct:title xml:lang="es">Accesibilidad a Hospitales - Transporte Público (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en transporte público desde núcleos urbanos hasta hospitales públicos de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>hospitales-transit-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100215"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/hospitales/transit/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/hospitales_transit_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/hospitales"/>
+            <dcat:keyword xml:lang="es">hospitales</dcat:keyword>
+            <dcat:keyword xml:lang="es">transporte público</dcat:keyword>
+            <dcat:keyword xml:lang="es">accesibilidad</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+    <!-- Centros de Salud - Driving -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/centros_salud/driving/2025">
+            <dct:title xml:lang="es">Accesibilidad a Centros de Salud - Vehículo Privado (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en vehículo privado desde núcleos urbanos hasta centros de salud de atención primaria de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>centros_salud-driving-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100215"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/centros_salud/driving/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/centros_salud_driving_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/centros_salud"/>
+            <dcat:keyword xml:lang="es">centros de salud</dcat:keyword>
+            <dcat:keyword xml:lang="es">vehículo privado</dcat:keyword>
+            <dcat:keyword xml:lang="es">atención primaria</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+    <!-- Centros de Salud - Transit -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/centros_salud/transit/2025">
+            <dct:title xml:lang="es">Accesibilidad a Centros de Salud - Transporte Público (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en transporte público desde núcleos urbanos hasta centros de salud de atención primaria de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>centros_salud-transit-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100215"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/centros_salud/transit/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/centros_salud_transit_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/centros_salud"/>
+            <dcat:keyword xml:lang="es">centros de salud</dcat:keyword>
+            <dcat:keyword xml:lang="es">transporte público</dcat:keyword>
+            <dcat:keyword xml:lang="es">atención primaria</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+    <!-- Consultorios - Driving -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/consultorios/driving/2025">
+            <dct:title xml:lang="es">Accesibilidad a Consultorios de Salud - Vehículo Privado (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en vehículo privado desde núcleos urbanos hasta consultorios locales de salud de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>consultorios-driving-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100215"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/consultorios/driving/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/consultorios_driving_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/consultorios"/>
+            <dcat:keyword xml:lang="es">consultorios</dcat:keyword>
+            <dcat:keyword xml:lang="es">vehículo privado</dcat:keyword>
+            <dcat:keyword xml:lang="es">salud local</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+    <!-- Consultorios - Transit -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/consultorios/transit/2025">
+            <dct:title xml:lang="es">Accesibilidad a Consultorios de Salud - Transporte Público (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en transporte público desde núcleos urbanos hasta consultorios locales de salud de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>consultorios-transit-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100215"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/consultorios/transit/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/consultorios_transit_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/consultorios"/>
+            <dcat:keyword xml:lang="es">consultorios</dcat:keyword>
+            <dcat:keyword xml:lang="es">transporte público</dcat:keyword>
+            <dcat:keyword xml:lang="es">salud local</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+    <!-- Campus Universitarios - Driving -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/campus_universitarios/driving/2025">
+            <dct:title xml:lang="es">Accesibilidad a Campus Universitarios - Vehículo Privado (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en vehículo privado desde núcleos urbanos hasta campus de universidades públicas de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>campus_universitarios-driving-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100217"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/campus_universitarios/driving/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/campus_universitarios_driving_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/campus_universitarios"/>
+            <dcat:keyword xml:lang="es">universidades públicas</dcat:keyword>
+            <dcat:keyword xml:lang="es">campus universitarios</dcat:keyword>
+            <dcat:keyword xml:lang="es">vehículo privado</dcat:keyword>
+            <dcat:keyword xml:lang="es">educación superior</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+    <!-- Campus Universitarios - Transit -->
+    <dcat:dataset>
+        <dcat:Dataset rdf:about="http://tfg-accesibilidad.es/datasets/accesibilidad/campus_universitarios/transit/2025">
+            <dct:title xml:lang="es">Accesibilidad a Campus Universitarios - Transporte Público (2025)</dct:title>
+            <dct:description xml:lang="es">Distancias y tiempos de desplazamiento en transporte público desde núcleos urbanos hasta campus de universidades públicas de la Comunidad de Madrid</dct:description>
+            <dct:source rdf:resource="https://developers.google.com/maps/documentation/distance-matrix"/>
+            <dct:identifier>campus_universitarios-transit-2025</dct:identifier>
+            <dct:type rdf:resource="http://publications.europa.eu/resource/authority/eurovoc/100217"/>
+            <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-20</dct:issued>
+            <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+            <dcat:accessURL rdf:resource="http://tfg-accesibilidad.es/datasets/accesibilidad/campus_universitarios/transit/2025"/>
+            <dcat:downloadURL rdf:resource="http://tfg-accesibilidad.es/downloads/campus_universitarios_transit_2025.csv"/>
+            <dcat:inSeries rdf:resource="http://tfg-accesibilidad.es/series/accesibilidad/campus_universitarios"/>
+            <dcat:keyword xml:lang="es">universidades públicas</dcat:keyword>
+            <dcat:keyword xml:lang="es">campus universitarios</dcat:keyword>
+            <dcat:keyword xml:lang="es">transporte público</dcat:keyword>
+            <dcat:keyword xml:lang="es">educación superior</dcat:keyword>
+            <dcat:mediaType>text/csv</dcat:mediaType>
+        </dcat:Dataset>
+    </dcat:dataset>
+
+</dcat:Catalog>
+</rdf:RDF>
